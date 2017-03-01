@@ -1,0 +1,19 @@
+.center {
+	text-align: center;
+}
+
+.listText {
+	text-indent: 0.8em;
+}
+
+.completedCheckbox {
+	text-align: right;
+}
+
+input[type=checkbox] {
+	margin: 4px 12px 0 !important;
+}
+
+.fa-check-square-o {
+	color: green;
+}
