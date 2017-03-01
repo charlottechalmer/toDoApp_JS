@@ -6,11 +6,8 @@
 	text-indent: 0.8em;
 }
 
-.completedCheckbox {
-	text-align: right;
-}
-
 input[type=checkbox] {
+	float: right;
 	margin: 4px 12px 0 !important;
 }
 
