@@ -13,4 +13,9 @@ input[type=checkbox] {
 
 .fa-check-square-o {
 	color: green;
+	float: right;
+}
+
+label {
+	font-weight: normal !important;
 }
