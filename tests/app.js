@@ -9,5 +9,4 @@ describe('tests', () => {
 	it('should return true', () => {
 		assert.isTrue(true);
 	});
-	done();
 });
