@@ -23,7 +23,6 @@ const sendTask = () => {
 	$.post('/task/new', {
 		task: $('#searchInput').val()
 	}, (data) => {
-		console.log(data._id);
 		$('#toDoList').append(
 			'<tr id="' + data._id + '"><td><label for=' + data._id + '>' +data.task + '</label><input type="checkbox" data-id=' + data._id + '></td></tr>'
 			)
@@ -56,7 +55,6 @@ const deleteCompleted = (id) => {
 }
 
 $('#completedItems').on('click', '.deleteBtn', (evt) => {
-	console.log($(evt.target).parent());
 	deleteCompleted($(evt.target).parent().data('id'));
 });
 
