@@ -23,5 +23,7 @@
     "mocha": "^3.2.0",
     "mongoose": "^4.8.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "chai-http": "^3.0.0"
+  }
 }

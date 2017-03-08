@@ -1,8 +1,12 @@
 /*jshint esversion:6*/
-var chai = require('chai');
-var assert = chai.assert;
-var should = chai.should();
+let chai = require('chai');
+let assert = chai.assert;
+let should = chai.should();
+let server = require('../app.js');
 
+let chaiHttp = require('chai-http');
+
+chai.use(chaiHttp);
 //shouldnt write tests that generate data and then tests
 	//actually guarenteeing that the code runs correctly and that you've run every path
 	//make a test that checks invalid paths as well**** --> all if then statements
@@ -22,5 +26,10 @@ describe('tests', () => {
 
 //write tests for any end point
 describe('task', () => {
-	it('should ')
+	it('should  create a new task by posting to /task/new', (done) => {
+		chai.request(server).post('/task/new').end((err, res) => {
+			res.should.have.status(200);
+			done();
+		});
+	});
 });
