@@ -14,6 +14,17 @@ input[type=checkbox] {
 .fa-check-square-o {
 	color: green;
 	float: right;
+	padding-top: 3.2px;
+}
+
+.fa-trash-o {
+	color: red;
+}
+
+button.deleteBtn {
+	float: right;
+	margin-left: 6px;
+	padding: 0;
 }
 
 label {
